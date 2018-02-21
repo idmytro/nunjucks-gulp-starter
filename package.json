@@ -3,6 +3,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gulp": "3.9.1"
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "gulp-nunjucks-render": "^2.0.0"
   }
 }
