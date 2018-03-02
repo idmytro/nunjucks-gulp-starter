@@ -6,12 +6,12 @@ var reload = browserSync.reload;
 
 gulp.task('serve', ['nunjucks'], () => {
   browserSync.init({server: './dist'});
-  gulp.watch('src/**/*.+(html|nunjucks)', ['nunjucks']);
+  gulp.watch('src/**/*.+(html|njk|nunjucks)', ['nunjucks']);
   gulp.watch('src/pages/**/*.html').on('change', reload);
 });
 
 gulp.task('nunjucks', () => {
-  return gulp.src('src/pages/**/*.+(html|nunjucks)')
+  return gulp.src('src/pages/**/*.+(html|njk|nunjucks)')
     // .pipe(data(() => require('./data/data.json')))
     .pipe(nunjucksRender({ path: ['src/templates'] }))
     .pipe(gulp.dest('dist'))
