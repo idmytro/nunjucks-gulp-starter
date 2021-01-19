@@ -1,16 +1,6 @@
 {
-  "cities": [
-    {
-      "city": "New York",
-      "population": 1000
-    },
-    {
-      "city": "Los Angeles",
-      "population": 2000
-    }
-  ],
   "citiesMap": [
-    ["New York", 1100],
-    ["Los Angeles", 2100]
+    ["oldest Vasiuki", 222],
+    ["B", 1111]
   ]
 }

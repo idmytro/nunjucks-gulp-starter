@@ -5,39 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title></title>
+  <title>PAGE</title>
   {# <link rel="stylesheet" href="./style.css"> #}
 </head>
 
 <body>
   {% include "partials/header.njk" %}
   <main>
-    {# {% block main %}{% endblock %} #}
-
-    {% for item in cities %}
-        {{ item.city }} {{ item.population }}
-    {% endfor %}
-
-    {% for item in citiesMap %}
-        {{ item[0] }} {{ item[1] }}
-    {% endfor %}
-
     {% for city, population  in citiesMap %}
-        {{ city }} {{ population }}
+        {{ city }} | {{ population }}
     {% endfor %}
-
-    <table>
-      <tr>
-        <th>Город</th>
-        <th>Население</th>
-      </tr>
-      {% for city, population  in citiesMap %}
-      <tr>
-        <td>{{ city }}</td>
-        <td>{{ population }}</td>
-      </tr>
-      {% endfor %}
-    </table>
   </main>
   {% include "partials/footer.njk" %}
 </body>
