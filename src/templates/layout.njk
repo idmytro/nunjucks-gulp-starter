@@ -12,7 +12,11 @@
 <body>
   {% include "partials/header.njk" %}
   <main>
-    {% block main %}{% endblock %}
+    {# {% block main %}{% endblock %} #}
+
+    {% for item in cities %}
+        {{ item.city }} {{ item.population }}
+    {% endfor %}
   </main>
   {% include "partials/footer.njk" %}
 </body>

@@ -1,0 +1,12 @@
+{
+  "cities": [
+    {
+      "city": "New York",
+      "population": 1000
+    },
+    {
+      "city": "Los Angeles",
+      "population": 2000
+    }
+  ]
+}
