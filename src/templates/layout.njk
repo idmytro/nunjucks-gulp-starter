@@ -25,6 +25,19 @@
     {% for city, population  in citiesMap %}
         {{ city }} {{ population }}
     {% endfor %}
+
+    <table>
+      <tr>
+        <th>Город</th>
+        <th>Население</th>
+      </tr>
+      {% for city, population  in citiesMap %}
+      <tr>
+        <td>{{ city }}</td>
+        <td>{{ population }}</td>
+      </tr>
+      {% endfor %}
+    </table>
   </main>
   {% include "partials/footer.njk" %}
 </body>
