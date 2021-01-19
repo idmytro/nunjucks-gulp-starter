@@ -17,6 +17,14 @@
     {% for item in cities %}
         {{ item.city }} {{ item.population }}
     {% endfor %}
+
+    {% for item in citiesMap %}
+        {{ item[0] }} {{ item[1] }}
+    {% endfor %}
+
+    {% for city, population  in citiesMap %}
+        {{ city }} {{ population }}
+    {% endfor %}
   </main>
   {% include "partials/footer.njk" %}
 </body>

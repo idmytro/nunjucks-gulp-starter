@@ -8,5 +8,9 @@
       "city": "Los Angeles",
       "population": 2000
     }
+  ],
+  "citiesMap": [
+    ["New York", 1100],
+    ["Los Angeles", 2100]
   ]
 }
